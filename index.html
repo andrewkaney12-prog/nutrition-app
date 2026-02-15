@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrition App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Nutrition App</h1>
+
+  <nav>
+    <button onclick="showSection('library')">Meal Library</button>
+    <button onclick="showSection('planner')">Weekly Planner</button>
+    <button onclick="showSection('grocery')">Grocery List</button>
+    <button onclick="showSection('summary')">Nutrition Summary</button>
+  </nav>
+
+  <!-- Meal Library -->
+  <section id="library">
+    <h2>Meal Library</h2>
+    <form id="meal-form">
+      <input type="text" id="meal-name" placeholder="Meal Name" required>
+      <button type="submit">Add Meal</button>
+    </form>
+    <ul id="meal-list"></ul>
+  </section>
+
+  <!-- Weekly Planner -->
+  <section id="planner" style="display:none;">
+    <h2>Weekly Planner</h2>
+    <ul id="planner-list"></ul>
+  </section>
+
+  <!-- Grocery List -->
+  <section id="grocery" style="display:none;">
+    <h2>Grocery List</h2>
+    <ul id="grocery-list"></ul>
+  </section>
+
+  <!-- Nutrition Summary -->
+  <section id="summary" style="display:none;">
+    <h2>Nutrition Summary</h2>
+    <p id="nutrition-summary"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
